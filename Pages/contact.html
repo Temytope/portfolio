@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title><header>My Contact</header></title>
-        <h2><header>My Contacts</header></h2>
+        <title><header>Contact-Me</header></title>
+        <h2><header>Contact-Me</header></h2>
+        <p> For questions and enquiries, fill the form below and I will get back to you asap</p>
     </head>
     <body>
+        <form>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label>
+                    First Name:
+                    <input type="text" name="first name">
+                </label>
+                <label>
+                    Last Name:
+                    <input type="text" name="last name">
+                </label>
+                <label>
+                    Email Address:
+                    <input type="email" name="email">
+                </label>                
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Reasons for enquiry</legend>
+                <label>
+                    Enquiry Reason(s)
+                    <input type="checkbox" name="enquiry purpose" value="networking">Networking
+                    <input type="checkbox" name="enquiry purpose" value="personal">Personal
+                    <input type="checkbox" name="enquiry purpose" value="collaboration">Collaboration
+                    <input type="checkbox" name="enquiry purpose" value="interview">interview
+                </label>
+                <legend>Others</legend>
+                <lable>Other Reasons</lable>
+                <textarea id="notes"></textarea>                
+            </fieldset>
+        </form>
 
     </body>
     <footer>Created by Temitope Arise, 2022</footer>
